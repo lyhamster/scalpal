@@ -55,13 +55,13 @@ Scalpal is built as a **single-page application** using React Router for client-
 
 The application uses nested routes:
 
-``/
+```text
 ├── Login
 └── OverallPage        (shared layout)
     ├── /dashboard
     ├── /patients
     └── /mail
-`` 
+```
 
 ## Getting started
 
