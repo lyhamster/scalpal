@@ -9,6 +9,7 @@
 It provides a dashboard, patient information, mailbox and simulated authentication.
 
 The name *Scalpal* is a wordplay between **scalpel** and **pal**.
+
 [vercel-demo]: https://scalpal-iota.vercel.app/
 
 ## Demo
