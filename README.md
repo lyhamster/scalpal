@@ -3,14 +3,13 @@
 > A medical platform interface built with React and TypeScript from a Figma design.
 
 ## Overview
+[vercel-demo]: https://scalpal-iota.vercel.app/
 
 **Scalpal** is a frontend application designed for healthcare professionals.
 
 It provides a dashboard, patient information, mailbox and simulated authentication.
 
 The name *Scalpal* is a wordplay between **scalpel** and **pal**.
-
-[vercel-demo]: https://scalpal-iota.vercel.app/
 
 ## Demo
 
