@@ -1,0 +1,21 @@
+export type UserData = {
+    image: string,
+    firstName: string,
+    company: {title : string, name: string},
+    lastName: string,
+    email: string,
+    id: number,
+    gender: string,
+    age: number,
+    birthDate: string,
+    bloodGroup: string,
+    height: number,
+    weight: number,
+    eyeColor: string,
+    hair: {
+        color: string,
+        type: string,
+    },
+    phone: string,
+    address: {address: string, city: string, state: string, country: string,},
+}
