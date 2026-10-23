@@ -1,6 +1,6 @@
 # Scalpal 
 
-> A medical platform interface built with React and TypeScript from a Figma design.
+![scalpal banner](Frame52.png)
 
 ## Overview
 
