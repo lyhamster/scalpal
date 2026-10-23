@@ -4,7 +4,7 @@
 
 ## Overview
 
-[vercel]: https://scalpal-iota.vercel.app/
+[vercel demo](https://scalpal-iota.vercel.app/)
 
 **Scalpal** is a frontend application designed for healthcare professionals.
 
