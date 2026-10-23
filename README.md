@@ -1,6 +1,6 @@
 # Scalpal 
 
-![scalpal banner](Frame52.png)
+![scalpal banner](Frame%2052.png)
 
 ## Overview
 
