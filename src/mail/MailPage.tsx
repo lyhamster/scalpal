@@ -1,4 +1,4 @@
-import { createContext, useEffect, useState, type SetStateAction } from "react";
+import { createContext, useState, type SetStateAction } from "react";
 import Button from "../components/Button"
 import MailPreview from "./MailPreview";
 import MailSidePreview from "./MailSidePreview";
