@@ -30,8 +30,8 @@ const PatientPreview = ({user, index} : Props) => {
         setPatientId(user.id)
     }
 
-    return <div className="flex flex-col itens-center p-[8px] text-[12px] text-lime-accent gap-(--gap-main) cursor-pointer" style={user.id === patientId ? selectedStyle : undefined}>
-        <div className="flex gap-(--gap-main) w-[100%] pr-[10px]" onClick={handleClick}>
+    return <div className="flex flex-col itens-center p-[8px] 2xl:text-base text-xs text-lime-accent 2xl:gap-2 gap-1 cursor-pointer" style={user.id === patientId ? selectedStyle : undefined}>
+        <div className="flex 2xl:gap-2 gap-1 w-[100%] pr-[10px]" onClick={handleClick}>
             <img className="rounded-full w-[33px] h-[33px] border border-white" src={user.image} alt="patient_profile_picture" />
             <div className="flex flex-col w-full">
                 <div className="flex flex-row justify-between">

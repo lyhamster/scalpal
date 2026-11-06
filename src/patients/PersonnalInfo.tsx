@@ -9,21 +9,21 @@ const patientFeatLabel = ["Age", "Gender", "Birth date", "Eye color", "Hair colo
 const PersonnalInfo = ({user} : Prop) => {
     const patientFeatData = [`${user?.age} y.o`, user?.gender, user?.birthDate, user?.eyeColor, user?.hair.color, user?.hair.type];
 
-    return <div className="flex flex-col gap-[16px]">
-        <div className="flex gap-[8px] py-[8px] px-[22px] rounded-md bg-lime-400 border border-white text-black justify-between">
+    return <div className="flex flex-col 2xl:gap-2 gap-1">
+        <div className="flex 2xl:gap-1 2xl:py-[8px] 2xl:px-[24px] px-[12px] py-[4px] rounded-md bg-lime-400 border border-white text-black justify-between">
             <p>Blood group</p>
             <p className="font-bold">{user?.bloodGroup}</p>
         </div>
-        <div className="flex gap-[8px] py-[8px] px-[22px] rounded-md bg-green-700 border border-white text-white justify-between">
+        <div className="flex 2xl:gap-1 2xl:py-[8px] 2xl:px-[24px] px-[12px] py-[4px] rounded-md bg-green-700 border border-white text-white justify-between">
             <p>Height</p>
             <p className="font-bold">{user?.height}</p>
         </div>
-        <div className="flex gap-[8px] py-[8px] px-[22px] rounded-md bg-green-700 border border-white text-white justify-between">
+        <div className="flex 2xl:gap-1 2xl:py-[8px] 2xl:px-[24px] px-[12px] py-[4px] rounded-md bg-green-700 border border-white text-white justify-between">
             <p>Weight</p>
             <p className="font-bold">{user?.weight}</p>
         </div> 
         <div className="flex justify-between">
-            <div className="flex flex-col text-lime-400 justify-between gap-[8px]">
+            <div className="flex flex-col text-lime-400 justify-between 2xl:gap-1">
                 {patientFeatLabel?.map((features) =><p>{features}</p>)}
             </div>
             <div className="flex flex-col text-lime-400 justify-between font-futura font-bold">

@@ -14,16 +14,16 @@ const ContactDetails = ({user}: Prop) => {
 
     return <MainBlock title="Contact details" bgColor={{background: "black"}}>
         <div className="flex justify-between">
-            <div className="flex flex-col gap-(--gap-main)">
+            <div className="flex flex-col 2xl:gap-2 gap-[4px]">
                 {contactLabelsList.map((label,index) => <p key={`${label} ${index}`}>{label}</p>)}
             </div>
-            <div className="flex flex-col gap-(--gap-main) items-end">
+            <div className="flex flex-col 2xl:gap-2 gap-[4px] items-end">
                 {user !== undefined && contactDetailsList?.map((contactDetails) => <p className="text-lime-400 font-bold">{contactDetails}</p>)}   
             </div>
         </div>
         <div className="flex flex-row gap-[16px] justify-end">
-            <Button label="Call phone" onClick={() => console.log("hello")}/>
-            <Button label="Send email" onClick={() => console.log("hello")}/>
+            <Button label="Call phone" onClick={() => console.log("hello")} />
+            <Button label="Send email" onClick={() => console.log("hello")} />
         </div>
     </MainBlock>
 }

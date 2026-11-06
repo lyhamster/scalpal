@@ -5,10 +5,10 @@ type Prop = {
     user?: UserData,
 }
 const PatientAppointment = ({ user }: Prop) => {
-    return <div className="flex flex-col gap-[8px] gap-[16px] text-[12px]">
-        <div className="flex flex-row items-center gap-[16px]">
-            <img className="rounded-full border border-white w-[78px] h-[78px]" src={user?.image} alt="patient_profile" />
-            <h1 className="text-lime-accent text-[36px] font-bold">{user?.firstName} {user?.lastName}</h1>
+    return <div className="flex flex-col gap-1 2xl:gap-2 text-xs">
+        <div className="flex flex-row items-center 2xl:gap-2 gap-1">
+            <img className="rounded-full border border-white 2xl:w-[78px] 2x:lh-[78px] w-[39px] h-[39px]" src={user?.image} alt="patient_profile" />
+            <h1 className="text-lime-accent 2xl:text-4xl text-2xl font-bold">{user?.firstName} {user?.lastName}</h1>
         </div>
         <hr className="text-lime-accent"/>
         <MainBlock title="Next appointment" bgColor={{background: "black"}}>

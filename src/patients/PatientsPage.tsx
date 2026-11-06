@@ -27,21 +27,21 @@ const PatientsPage = () => {
     const [patientId, setPatientId] = useState<number>();
     const { patients } = useSomeContext();
 
-    return <div className="flex flex-col bg-black p-(--spacing) rounded-[26px] border border-white w-[100%] gap-[16px] relative z-1">
-        <h1 className="text-lime-accent font-bold text-[36px]">Patients</h1>
+    return <div className="flex flex-col bg-black 2xl:p-(--xl-padding) p-(--base-padding) rounded-[26px] border border-white w-[100%] 2xl:gap-2 gap-1 relative z-1">
+        <h1 className="text-lime-accent font-bold 2xl:text-4xl text-2xl">Patients</h1>
         <PatientsContext value={{ setPatientId, patientId }}>
             <div className="flex flex-row h-[100%] text-[12px]">
                 <PreviewSide>
                     {patients?.map((patient: UserData, index: number) => <PatientPreview user={patient} index={index}/>)}
                 </PreviewSide>
-                <div className="p-(--spacing) grow-4 flex flex-col gap-[16px] border border-white after:radius-md" style={{borderRadius: "0px 20px 20px 0px"}}>
+                <div className="2xl:p-(--xl-padding) p-(--base-padding) grow-4 flex flex-col 2xl:gap-2 gap-1 border border-white after:radius-md" style={{borderRadius: "0px 20px 20px 0px"}}>
                     <PatientAppointment user={patients?.find((patient: UserData) => patient.id === patientId)}/>
-                    <hr className="text-lime-accent"/>
-                    <div className="flex flex-row gap-[16px] justify-between">
+                    <hr className="text-lime-accent" />
+                    <div className="flex flex-row 2xl:gap-2 gap-1 justify-between">
                         <div className="grow-1">
                             <PersonnalInfo user={patients?.find((patient: UserData) => patient.id === patientId)}/>
                         </div>
-                        <div className="grow-2 flex flex-col gap-[16px]">
+                        <div className="grow-2 flex flex-col 2xl:gap-2 gap-1 ">
                             <ContactDetails user={patients?.find((patient: UserData) => patient.id === patientId)}/>
                             <Files />    
                         </div>    

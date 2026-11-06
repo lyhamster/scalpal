@@ -32,10 +32,10 @@ const MailPreview = ({id, name, title, body, userId} : Post) => {
         getUserInfo();
     }
 
-    return <div key={id} className="relative z-1 flex flex-col gap-[3px] p-[20px] text-lime-accent font-futura" onClick={handleRead}>
-       <div className={readList.includes(id) ? "read" : ""} style={postId === id ? selectedStyle : undefined}>
+    return <div key={id} className="relative z-1 flex flex-col gap-[3px] 2xl:p-[20px] p-1 text-lime-accent font-futura" onClick={handleRead}>
+       <div className={`${readList.includes(id) ? "read" : ""} scrollbar-auto`} style={postId === id ? selectedStyle : undefined}>
             <h1>{name}</h1>
-            <div className="flex flex-row gap-[8px] items-baseline cursor-pointer">
+            <div className="flex flex-row gap-1 2xl:gap-2 gap-2 items-baseline cursor-pointer">
                 <div className={readList.includes(id) ?  "" : "unread"} style={readList.includes(id) ? {display: "none"} : {display: "flex"}}></div> 
                 <p className="font-bold">{title}</p>
             </div> 

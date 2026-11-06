@@ -11,13 +11,13 @@ const RecentMails = () => {
     const {patients, patientsPostContents} = useSomeContext();
     const splicedPosts = patientsPostContents?.posts.toSpliced(3, 2);
     
-    return <div className="rounded-[20px] p-[20px] flex flex-col colorMixGreen text-lime-accent font-bold h-[100%] gap-(--gap-main)">
+    return <div className="rounded-[20px] 2xl:p-3 p-2 xl:text-xs flex flex-col colorMixGreen text-lime-accent font-bold h-[100%] 2xl:gap-2 gap-1">
         <p className="relative z-1">Recent mails</p>
         <hr />
-         {splicedPosts?.map((mail) => {
+        {splicedPosts?.map((mail) => {
             const index = patients.findIndex(user => user.id === mail.userId);
             return <MailPreview key={mail.id} name={patients[index]?.firstName} mailObj={mail.title}/>
-         })}
+        })}
     </div>
 }
 

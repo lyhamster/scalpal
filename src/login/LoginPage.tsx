@@ -27,19 +27,19 @@ const LoginPage = () => {
 
     return (
         <div className="flex flex-row relative h-[100dvh] bg-creme">
-            <div className="flex-1 p-[60px]">
+            <div className="2xl:flex-1 w-[50%] 2xl:p-[60px] p-[30px]">
                 <PortalDecoration />
             </div>
-            <div className="pr-[120px] pb-[120px] pt-[120px] pl-[60px]">
-                <div className="flex flex-col gap-[32px]">
+            <div className="2xl:p-(--xxl-padding) py-[60px] px-[30px]">
+                <div className="flex flex-col 2xl:gap-[32px] gap-[16px]">
                     <div>
                         <img src={logo} alt="logo" />
                     </div>
-                    <h1 className="font-bold text-[32px]">Sign into your existing account</h1>
+                    <h1 className="font-bold 2xl:text-3xl text-base">Sign into your existing account</h1>
                     <p className="text-green-700">Access your dashboard, patients details and manage your schedule.</p>
                     <Form />
-                    <div className="flex justify-center gap-[5px]">Don't have an account ? <a className="text-lime-400 decoration-1 underline" href="">Sign in</a></div>
-                    <Block content="** ELECTED BEST MEDICAL APPLICATION OF 2026 ** ELECTED BEST MEDICAL APPLICATION OF 2026 ** ELECTED BEST MEDICAL APPLICATION OF 2026 **"/>
+                    <div className="flex justify-center 2xl:gap-[5px] gap-[2.5px] 2xl:text-lg text-sm">Don't have an account ? <a className="text-lime-400 decoration-1 underline" href="">Sign in</a></div>
+                    <Block content="** ELECTED BEST MEDICAL APPLICATION OF 2026 ** ELECTED BEST MEDICAL APPLICATION OF 2026 ** ELECTED BEST MEDICAL APPLICATION OF 2026 **" />
                 </div>    
             </div>
         </div>

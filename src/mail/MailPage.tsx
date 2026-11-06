@@ -26,7 +26,9 @@ export type UserpostContextProps = {
 export const UserpostContext = createContext<UserpostContextProps | null>(null);
 
 useSomeContext;
-
+type Prop = {
+    "--radius-md": string;
+}
 const MailPage = () => {
     const { patients, patientsPostContents } = useSomeContext();
     
@@ -49,13 +51,13 @@ const MailPage = () => {
         }
     }
 
-    return <div className="flex flex-col p-(--spacing) rounded-[26px] w-[100%] gap-[16px] overflow-hidden bg-black text-[12px]">
-        <p className="text-lime-accent relative z-1 text-[36px] font-futura font-bold">Mailbox</p>
-        <nav className="flex gap-[8px] border border-white rounded-[20px] p-(--spacing) colorMixGreen after:radius-sm">
-            <Button label="New mail" onClick={() => console.log("hello")} bgColor={{background: "black"}}/>
-            <Button label="Mark all as read" onClick={handleReadAll}/>
-            <Button label="Mark all as unread" onClick={handleUnreadAll}/>
-            <Button label="Mark as unread" onClick={handleUnread}/>
+    return <div className="flex flex-col 2xl:p-(--xl-padding) p-(--base-padding) rounded-[26px] w-[100%] 2xl:gap-2 gap-1 overflow-hidden bg-black text-xs">
+        <p className="text-lime-accent relative z-1 2xl:text-4xl font-futura font-bold">Mailbox</p>
+        <nav className="flex 2xl:gap-1 gap-[4px] border border-white 2xl:rounded-1 2xl:p-(--xl-padding) xl:rounded-(--radius-xs) p-(--base-padding) colorMixGreen after:radius-sm">
+            <Button label="New mail" onClick={() => console.log("hello")} bgColor={{background: "black"}} />
+            <Button label="Mark all as read" onClick={handleReadAll} />
+            <Button label="Mark all as unread" onClick={handleUnreadAll} />
+            <Button label="Mark as unread" onClick={handleUnread} />
         </nav>
         <UserpostContext value={{postId, setPostId, setSinglePost, allRead, setAllRead, readList, setReadList}}>
             <div className="flex border-white border relative z-1 rounded-[20px] font-futura h-dvh">

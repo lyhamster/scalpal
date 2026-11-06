@@ -27,11 +27,11 @@ const Form =  () => {
         });
     }
 
-    return <form className="flex flex-col uppercase text-green-700 gap-[10px]">
+    return <form className="flex flex-col uppercase text-green-700 text-xs 2xl:gap-[10px] gap-[5px]">
         <label htmlFor="email">email</label>
-        <input className="bg-white border border-black p-[10px] rounded-[8px]" type="email" id="email" pattern=".+@exemple\.com" value={email} onChange={(e) => setEmail(e.target.value)} required/>
+        <input className="bg-white border border-black 2xl:p-[16px] p-[6px] gap-[5px] rounded-[8px]" type="email" id="email" placeholder="emilys" pattern=".+@exemple\.com" value={email} onChange={(e) => setEmail(e.target.value)} required/>
         <label htmlFor="password">password</label>
-        <input className="bg-white border border-black p-[10px] rounded-[8px]" type="password" id="password" value={password} onChange={(e) => setPassword(e.target.value)}/>     
+        <input className="bg-white border border-black 2xl:p-[16px] p-[6px] gap-[5px] rounded-[8px]" type="password" id="password" value={password} placeholder="emilyspass" onChange={(e) => setPassword(e.target.value)}/>     
         <Button label="login" onClick={e => handleSubmit(e)}/>
     </form>
 }
