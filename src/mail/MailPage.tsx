@@ -26,9 +26,7 @@ export type UserpostContextProps = {
 export const UserpostContext = createContext<UserpostContextProps | null>(null);
 
 useSomeContext;
-type Prop = {
-    "--radius-md": string;
-}
+
 const MailPage = () => {
     const { patients, patientsPostContents } = useSomeContext();
     
